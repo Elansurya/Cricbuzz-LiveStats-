@@ -1,4 +1,3 @@
-
 import streamlit as st
 import requests
 import pandas as pd
@@ -6,9 +5,8 @@ import mysql.connector
 from mysql.connector import Error
 from datetime import datetime
 
-# ===============================
 # PAGE CONFIGURATION
-# ===============================
+
 st.set_page_config(
     page_title="🏏 Cricbuzz LiveStats Pro",
     page_icon="🏏",
@@ -16,9 +14,8 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ===============================
 # CUSTOM CSS STYLING
-# ===============================
+
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap');
@@ -193,9 +190,8 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# ===============================
 # DATABASE CONNECTION
-# ===============================
+
 def get_db_connection():
     """Establish database connection with error handling"""
     try:
@@ -230,9 +226,8 @@ def execute_query(query, params=None):
         if conn and conn.is_connected():
             conn.close()
 
-# ===============================
 # API FUNCTIONS
-# ===============================
+
 def fetch_live_matches():
     """Fetch live matches from Cricbuzz API"""
     try:
@@ -249,9 +244,8 @@ def fetch_live_matches():
         st.error(f"❌ API Error: {str(e)}")
         return None
 
-# ===============================
 # HOME PAGE
-# ===============================
+
 def home_page():
     """Home page with project overview"""
     st.markdown("<h1 style='text-align: center;'>🏏 CRICBUZZ LIVESTATS PRO</h1>", unsafe_allow_html=True)
@@ -325,9 +319,8 @@ def home_page():
         </div>
         """, unsafe_allow_html=True)
 
-# ===============================
 # LIVE MATCHES PAGE
-# ===============================
+
 def live_matches_page():
     """Display live cricket matches"""
     st.markdown("<h1>🔴 LIVE MATCHES</h1>", unsafe_allow_html=True)
@@ -414,9 +407,8 @@ def live_matches_page():
     else:
         st.error("❌ Unable to fetch live matches. Please try again later.")
 
-# ===============================
 # PLAYER STATS PAGE
-# ===============================
+
 def player_stats_page():
     """All players statistics"""
     st.markdown("<h1>📊 ALL PLAYERS</h1>", unsafe_allow_html=True)
@@ -491,9 +483,8 @@ def player_stats_page():
     else:
         st.info("No players found matching the selected filters.")
 
-# ===============================
 # SQL ANALYTICS PAGE - ALL 25 QUERIES WITH TABLE ANSWERS
-# ===============================
+
 def sql_queries_page():
     """Complete 25 SQL queries with beautiful table UI"""
     st.markdown("<h1 style='text-align: center;'>🔍 SQL ANALYTICS - 25 QUERIES</h1>", unsafe_allow_html=True)
@@ -901,9 +892,7 @@ def sql_queries_page():
             st.session_state.execute_all = False
             st.rerun()
 
-# ===============================
 # CRUD OPERATIONS
-# ===============================
 def crud_operations_page():
     """CRUD operations with error handling"""
     st.markdown("<h1>🛠️ DATABASE MANAGEMENT (CRUD)</h1>", unsafe_allow_html=True)
@@ -1049,9 +1038,8 @@ def crud_operations_page():
     cursor.close()
     conn.close()
 
-# ===============================
 # MAIN APPLICATION
-# ===============================
+
 def main():
     # Initialize session state
     if 'execute_all' not in st.session_state:
@@ -1088,4 +1076,5 @@ def main():
         crud_operations_page()
 
 if __name__ == "__main__":
+
     main()
