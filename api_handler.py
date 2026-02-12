@@ -1,4 +1,3 @@
-
 import os
 import requests
 from dotenv import load_dotenv
@@ -112,3 +111,4 @@ class CricbuzzAPI:
             return False, f"API test failed: {str(e)}"
 
 api = CricbuzzAPI()
+
