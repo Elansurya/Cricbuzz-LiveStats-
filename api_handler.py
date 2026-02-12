@@ -111,6 +111,4 @@ class CricbuzzAPI:
         except Exception as e:
             return False, f"API test failed: {str(e)}"
 
-
-# Global API instance
 api = CricbuzzAPI()
