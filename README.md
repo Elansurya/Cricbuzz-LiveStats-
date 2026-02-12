@@ -1,138 +1,149 @@
-Cricbuzz LiveStats – Real-Time Cricket Insights & SQL-Based Analytics
-📌 Project Overview
+# 🏏 Cricbuzz LiveStats – Real-Time Cricket Insights & SQL-Based Analytics
 
-Cricbuzz LiveStats is a full-stack sports analytics web application that provides real-time cricket match updates, player statistics, and advanced SQL-driven analytics.
-The application integrates live data from the Cricbuzz API with a SQL database and presents insights through an interactive Streamlit dashboard.
+## 🚀 Project Overview
+Cricbuzz LiveStats is a real-time cricket analytics dashboard that integrates live match data from the Cricbuzz API with a SQL database to deliver interactive, analytics-driven insights through a multi-page Streamlit web application.
 
-This project demonstrates real-world usage of Python, SQL, REST APIs, and Data Analytics in the sports domain.
-🎯 Problem Statement
+This project combines API integration, database management, advanced SQL analytics, and dashboard development into a unified sports intelligence platform.
 
-To build a comprehensive cricket analytics platform that:
+---
 
-Fetches live cricket data from an external API
+## 🎯 Business Problem
 
-Stores and manages data using SQL databases
+Cricket fans, fantasy league players, and sports analysts require:
+- ⚡ Real-time match updates
+- 📊 Detailed player performance analytics
+- 🔍 Advanced statistical insights
+- 🗄️ Structured historical data storage
 
-Performs advanced analytical queries
+Manual tracking and analysis are inefficient.  
+This system automates live data ingestion, SQL-based analytics, and visualization in one unified dashboard.
 
-Provides a user-friendly web interface
+---
 
-Supports CRUD operations for learning database management
+## 🧩 Key Features
 
-💼 Business Use Cases
+### 1️⃣ Live Match Dashboard
+- Fetches real-time match data using Cricbuzz REST API
+- Displays scorecards, player statistics, venue details
+- Auto-updated match status
 
-Sports Media & Broadcasting – Live match updates and player insights
+### 2️⃣ Top Player Analytics
+- Most runs, highest scores, most wickets
+- Batting and bowling performance metrics
+- Clean statistical visualization
 
-Fantasy Cricket Platforms – Player form analysis and performance tracking
+### 3️⃣ Advanced SQL Analytics (25+ Queries)
+- Beginner to Advanced SQL queries
+- Window functions, CTEs, aggregations
+- Performance ranking system
+- Head-to-head team analysis
+- Toss impact analysis
+- Player consistency tracking
+- Time-series performance evolution
 
-Cricket Analytics Firms – Data-driven player and team evaluation
+### 4️⃣ CRUD Operations Module
+- Add / Update / Delete player data
+- SQL database manipulation via form-based UI
+- Educational database learning module
 
-Educational Institutions – Teaching SQL, APIs, and analytics using real data
+---
 
-Sports Prediction & Betting – Historical trends and venue-based analysis
+## 🗄️ Database Architecture
 
-🛠️ Tech Stack
+- Designed normalized SQL schema
+- Database-agnostic (MySQL / PostgreSQL / SQLite compatible)
+- Optimized indexing for analytical queries
+- Centralized database connection handling
 
-Programming Language: Python
+---
 
-Web Framework: Streamlit
+## 🧠 Technical Stack
 
-Database: MySQL / PostgreSQL / SQLite
+- Python
+- Streamlit
+- SQL (MySQL/PostgreSQL/SQLite)
+- REST API Integration
+- Pandas
+- Requests
+- JSON Handling
+- Data Analytics & KPI Generation
 
-API Integration: REST API (Cricbuzz)
+---
 
-Libraries Used:
+## ⚙️ System Workflow
 
-pandas
+Cricbuzz API  
+↓  
+Python Data Processing  
+↓  
+SQL Database Storage  
+↓  
+Advanced SQL Analytics  
+↓  
+Streamlit Dashboard Visualization  
 
-requests
+---
 
-streamlit
+## 📊 Advanced SQL Analytics Highlights
 
-mysql-connector / psycopg2
+- Performance ranking formula combining batting & bowling metrics
+- Head-to-head win probability analysis
+- Toss advantage impact study
+- Player consistency (standard deviation analysis)
+- Quarterly time-series performance tracking
+- Batting partnership analytics
 
-🧩 Project Features
-🟢 Live Match Page
+---
 
-Real-time match scores
+## 📈 Expected Outcomes
 
-Team details, venue info, and match status
+✔ Real-time match insights  
+✔ Structured historical data storage  
+✔ Advanced SQL-driven analytics  
+✔ Interactive dashboard interface  
+✔ End-to-end API + Database integration  
 
-Batsman & bowler scorecards
+---
 
-🟣 Top Player Statistics Page
+## 🖥️ Deployment
 
-Most runs
+- Multi-page Streamlit application
+- Modular architecture
+- Secure API & DB credential handling
+- Clean UI with real-time updates
 
-Highest scores
+---
 
-Most wickets
+## 📂 Project Deliverables
 
-Clean tabular and visual presentation
+- main.py (Application entry point)
+- SQL schema & sample data
+- 25+ SQL analytics queries
+- requirements.txt
+- Documentation & setup guide
 
-🔵 SQL Analytics Page
+---
 
-25+ SQL queries (Beginner → Advanced)
+## 📌 Key Learnings
 
-Real-world analytics using joins, subqueries, CTEs, and window functions
+- Real-time API integration
+- SQL optimization & analytical querying
+- CRUD operations implementation
+- Multi-page Streamlit dashboard development
+- Performance tuning for data-driven applications
 
-Query results displayed directly in Streamlit UI
+---
 
-🟠 CRUD Operations Page
+## 🔮 Future Improvements
 
-Create, Read, Update, Delete player and match records
+- Predictive match outcome modeling
+- Player performance forecasting
+- Advanced visualization (Plotly integration)
+- Authentication & user personalization
+- Cloud database integration
 
-Form-based UI
+---
 
-Helps understand database manipulation practically
-
-🏠 Home Page
-
-Project description
-
-Tools & technologies used
-
-Navigation guide
-
-📊 SQL Analytics Coverage
-Beginner Level
-
-Player lists by country
-
-Recent matches
-
-Top run scorers
-
-Venue capacity analysis
-
-Intermediate Level
-
-All-rounder performance
-
-Home vs away analysis
-
-Player performance across formats
-
-Close match performance
-
-Advanced Level
-
-Toss impact analysis
-
-Player consistency scoring
-
-Head-to-head team analysis
-
-Partnership analytics
-🎯 Expected Outcomes
-
-Hands-on experience with real-time APIs
-
-Strong understanding of SQL analytics
-
-End-to-end data pipeline from API → Database → Dashboard
-
-Industry-ready sports analytics project
-Time-series performance trackingogies used
-
-Navigation guide
+## 👨‍💻 Author
+Elansurya K  
+Data Scientist | Machine Learning | NLP | SQL
